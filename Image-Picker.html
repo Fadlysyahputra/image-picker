@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript ES6 - Rizki Hernanda Suheri</title>
+</head>
+<body style="background-color: burlywood;">
+    <div>
+        <select onchange="change()" id="One">
+            <option>Select</option>
+            <option value="koala">koala</option>
+            <option value="kucing">kucing</option>
+            <option value="luwak">luwak</option>
+            <option value="macan">macan</option>
+            <option value="serigala">serigala</option>
+        </select>
+    </div><br>
+        <img src="" alt="" id="Two" width="100%"><br>
+
+<script>
+    function change(){
+        let img = document.getElementById("One").value
+        let image = document.getElementById("Two")
+        if(img == "koala"){
+           image.src = "koala.jpg"
+            alert ("This is a koala!")
+        }else if(img == "kucing"){
+            image.src = "kucing.jpg"
+            alert ("This is a kucing!")
+        }else if(img == "luwak"){
+            image.src = "luwak.jpg"
+            alert ("This is a luwak!")
+        }else if(img == "macan"){
+            image.src = "macan.jpg"
+            alert ("This is a macan!")
+        }else if(img == "serigala") {
+            image.src = "serigala.jpg"
+            alert("This is a serigala!")
+        }    
+    }
+</script>
+
+</body>
+</html>
